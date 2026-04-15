@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const FriendCard = ({ data }) => {
   return (
-    <div className="card bg-base-100 text-center shadow-sm p-6">
+    <Link href={`/friendId/${data.id}`} className="card bg-base-100 text-center shadow-sm p-6">
       <figure className="w-15 h-15 rounded-full mx-auto">
         <Image src={data.picture} width='1000' height='100' className="w-full h-full" alt="picture of john" />
       </figure>
@@ -17,7 +18,7 @@ const FriendCard = ({ data }) => {
           <div className="badge bg-[#EF4444] text-white ">{data.status}</div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
