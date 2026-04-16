@@ -54,13 +54,13 @@ const Footer = () => {
           </nav>
         </div>
 
-        <div className="py-3 text-white flex justify-between items-center">
-            <div className="">© 2026 KeenKeeper. All rights reserved.</div>
-            <div className="items-center gap-3 hidden lg:flex">
+        <div className="py-3 text-white lg:flex-row-reverse lg:flex lg:items-center justify-between">
+            <div className="items-center gap-3 text-gray-400 lg:flex mb-3">
                 <p>Privacy Policy</p>
                 <p>Terms of Service </p>
                 <p>Cookies</p>
             </div>
+            <div className="text-[12px] pb-3">© 2026 KeenKeeper. All rights reserved.</div>
         </div>
       </div>
     </div>

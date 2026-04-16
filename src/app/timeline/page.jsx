@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { CallContext } from "@/Context/CallProvider";
 import Image from "next/image";
@@ -8,6 +8,8 @@ import CallImg from "../../image/call.png";
 import TextImg from "../../image/text.png";
 import VedioImg from "../../image/video.png"
 
+
+
 const TimeLinepage = () => {
   const { call, setcall } = useContext(CallContext);
   const { text, setText } = useContext(CallContext);
@@ -15,11 +17,11 @@ const TimeLinepage = () => {
   console.log("vedio", vedio);
 
   return (
-    <div className="max-w-[70%] mx-auto my-10">
+    <div className="max-w-[90%] lg:max-w-[70%] mx-auto my-10">
       <h2 className="text-3xl text-black font-bold">Timeline </h2>
 
       {call.length === 0 ? (
-        <div className="bg-base-300 p-30 rounded-2xl mt-6 text-black text-4xl font-bold justify-center flex items-center">
+        <div className="bg-base-300 p-15 lg:p-30 rounded-2xl mt-6 text-black text-4xl font-bold justify-center flex items-center">
           Not Found Data
         </div>
       ) : (

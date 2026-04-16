@@ -14,7 +14,7 @@ const HandleText = ({ friend }) => {
   };
   return (
     <div>
-      <button onClick={handleTextBtn} className="btn py-8 px-10  flex flex-col">
+      <button onClick={handleTextBtn} className="btn py-8 px-10 w-full flex flex-col">
         <span className="text-2xl">
           <MdTextsms />
         </span>
