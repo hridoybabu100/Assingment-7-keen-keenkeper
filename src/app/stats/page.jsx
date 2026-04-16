@@ -1,9 +1,11 @@
+import Reachart from '@/components/Reachart/Reachart';
 import React from 'react';
 
 const Stats = () => {
     return (
         <div>
-            starts page
+            <Reachart></Reachart>
+
         </div>
     );
 };
