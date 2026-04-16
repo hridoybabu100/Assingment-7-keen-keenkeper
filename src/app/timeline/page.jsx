@@ -5,10 +5,14 @@ import Image from "next/image";
 import { useContext } from "react";
 
 import CallImg from "../../image/call.png";
+import TextImg from "../../image/text.png";
+import VedioImg from "../../image/video.png"
 
 const TimeLinepage = () => {
   const { call, setcall } = useContext(CallContext);
-  //  console.log('calling', call);
+  const { text, setText } = useContext(CallContext);
+  const { vedio } = useContext(CallContext);
+  console.log("vedio", vedio);
 
   return (
     <div className="max-w-[70%] mx-auto my-10">
@@ -34,7 +38,7 @@ const TimeLinepage = () => {
               <div>
                 <h2>
                   <span className="text-2xl text-black font-bold">
-                    Call with
+                    Calling with
                   </span>{" "}
                   {item.name}
                 </h2>
@@ -42,6 +46,55 @@ const TimeLinepage = () => {
               </div>
             </div>
           ))}
+          <div className="mt-6">
+            {text.map((item) => (
+              <div
+                key={item.id}
+                className="bg-base-300 p-6 rounded-xl mb-5 flex gap-4"
+              >
+                <Image
+                  src={TextImg}
+                  width={30}
+                  height={10}
+                  alt="call img"
+                ></Image>
+                <div>
+                  <h2>
+                    <span className="text-2xl text-black font-bold">
+                      Messaging with
+                    </span>{" "}
+                    {item.name}
+                  </h2>
+                  <p className="text-[#64748B]">March {item.next_due_date}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-6">
+            {vedio.map((item) => (
+              <div
+                key={item.id}
+                className="bg-base-300 p-6 rounded-xl mb-5 flex gap-4"
+              >
+                <Image
+                  src={VedioImg}
+                  width={30}
+                  height={10}
+                  alt="call img"
+                ></Image>
+                <div>
+                  <h2>
+                    <span className="text-2xl text-black font-bold">
+                      Vedio Calling with
+                    </span>{" "}
+                    {item.name}
+                  </h2>
+                  <p className="text-[#64748B]">March {item.next_due_date}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>

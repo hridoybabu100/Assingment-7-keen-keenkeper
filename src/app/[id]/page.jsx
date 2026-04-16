@@ -1,7 +1,7 @@
-
 import HandleCall from "@/components/allToggleBtn/HandleCall";
+import HandleText from "@/components/allToggleBtn/HandleText";
+import HandleVedio from "@/components/allToggleBtn/HandleVedio";
 import Image from "next/image";
-
 
 import { FaArchive } from "react-icons/fa";
 import { FcVideoCall } from "react-icons/fc";
@@ -10,9 +10,6 @@ import { MdAddCall, MdDelete, MdTextsms } from "react-icons/md";
 const frinendDetails = async ({ params }) => {
   const { id } = await params;
   // console.log(data);
-
- 
-  
 
   const res = await fetch("http://localhost:3000/Data.json");
   const friends = await res.json();
@@ -102,20 +99,12 @@ const frinendDetails = async ({ params }) => {
                 <HandleCall friend={friend}></HandleCall>
               </div>
               <div>
-                <button className="btn py-8 px-10  flex flex-col">
-                  <span className="text-2xl">
-                    <MdTextsms />
-                  </span>
-                  <p>Text</p>
-                </button>
+                <HandleText friend={friend}></HandleText>
+              
               </div>
               <div>
-                <button className="btn py-8 px-10  flex flex-col">
-                  <span className="text-2xl">
-                    <FcVideoCall />
-                  </span>
-                  <p>Vedio</p>
-                </button>
+                <HandleVedio friend={friend}></HandleVedio>
+                
               </div>
             </div>
           </div>

@@ -18,7 +18,7 @@ const HandleCall = ({friend}) => {
     toast.success(`Meet Up ${friend.name} with calling`)
     
   };
-  console.log(call);
+  // console.log(call);
   
 
   return (
