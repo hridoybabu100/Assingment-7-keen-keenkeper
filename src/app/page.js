@@ -7,6 +7,7 @@ export default function Home() {
     <div>
         <HomePage></HomePage>
         <Friends></Friends>
+        
     </div>
   );
 }

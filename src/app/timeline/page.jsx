@@ -1,12 +1,51 @@
-import HomePage from '@/components/HomePage/HomePage';
-import React from 'react';
+"use client";
 
-const timeLinepage = () => {
-    return (
-        <div>
-            This is a time line
+import { CallContext } from "@/Context/CallProvider";
+import Image from "next/image";
+import { useContext } from "react";
+
+import CallImg from "../../image/call.png";
+
+const TimeLinepage = () => {
+  const { call, setcall } = useContext(CallContext);
+  //  console.log('calling', call);
+
+  return (
+    <div className="max-w-[70%] mx-auto my-10">
+      <h2 className="text-3xl text-black font-bold">Timeline </h2>
+
+      {call.length === 0 ? (
+        <div className="bg-base-300 p-30 rounded-2xl mt-6 text-black text-4xl font-bold justify-center flex items-center">
+          Not Found Data
         </div>
-    );
+      ) : (
+        <div className="mt-6">
+          {call.map((item) => (
+            <div
+              key={item.id}
+              className="bg-base-300 p-6 rounded-xl mb-5 flex gap-4"
+            >
+              <Image
+                src={CallImg}
+                width={30}
+                height={10}
+                alt="call img"
+              ></Image>
+              <div>
+                <h2>
+                  <span className="text-2xl text-black font-bold">
+                    Call with
+                  </span>{" "}
+                  {item.name}
+                </h2>
+                <p className="text-[#64748B]">March {item.next_due_date}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 };
 
-export default timeLinepage;
+export default TimeLinepage;

@@ -56,7 +56,7 @@ const Footer = () => {
 
         <div className="py-3 text-white flex justify-between items-center">
             <div>© 2026 KeenKeeper. All rights reserved.</div>
-            <div className="items-center hidden lg:flex">
+            <div className="items-center gap-3 hidden lg:flex">
                 <p>Privacy Policy</p>
                 <p>Terms of Service </p>
                 <p>Cookies</p>
