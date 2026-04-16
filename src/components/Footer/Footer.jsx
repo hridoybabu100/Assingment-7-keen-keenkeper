@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="bg-[#244D3F] text-center">
-      <div className="pt-20 max-w-[70%] mx-auto">
+      <div className="pt-15 lg:max-w-[70%] max-w-[90%] mx-auto">
         <div className="text-white pb-5">
           <h2 className="text-white text-6xl pb-2">Kenkeeper</h2>
           <p>
@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="py-3 text-white flex justify-between items-center">
-            <div>© 2026 KeenKeeper. All rights reserved.</div>
+            <div className="">© 2026 KeenKeeper. All rights reserved.</div>
             <div className="items-center gap-3 hidden lg:flex">
                 <p>Privacy Policy</p>
                 <p>Terms of Service </p>

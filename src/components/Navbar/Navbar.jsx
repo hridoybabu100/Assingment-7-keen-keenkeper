@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
+import { FaUserGraduate } from "react-icons/fa";
 import { ImStatsDots } from "react-icons/im";
 import { IoIosTimer } from "react-icons/io";
 import { RiHome2Line } from "react-icons/ri";
@@ -11,9 +12,10 @@ const Navbar = () => {
 
   return (
     <div className="shadow-sm">
-      <div className="navbar bg-base-100  max-w-[85%] mx-auto">
+      <div className="navbar bg-base-100  max-w-[94%] lg:max-w-[85%] mx-auto">
         <div className="navbar-start">
-          <h2 className="text-xl">KeenKeeper</h2>
+          <span className="text-[#244D3F] text-4xl sm:hidden"><FaUserGraduate/></span>
+          <h2 className="text-xl font-bold hidden sm:block">KeenKeeper</h2>
         </div>
 
         <div className="navbar-end">

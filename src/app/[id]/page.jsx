@@ -20,7 +20,7 @@ const frinendDetails = async ({ params }) => {
 
   return (
     <div className="max-w-[60%] my-10 mx-auto">
-      <div className="flex gap-10 justify-between items-center">
+      <div className="flex justify-between gap-8 items-center">
         <div className="card bg-base-200 text-center shadow-sm w-88 pt-2">
           <figure className="w-15 h-15 rounded-full mx-auto">
             <Image
@@ -35,7 +35,7 @@ const frinendDetails = async ({ params }) => {
             <h2 className="text-center text-black font-bold text-2xl">
               {friend.name}
             </h2>
-            <div className="">{friend.days_since_contact}</div>
+            <div className="">{friend.days_since_contact} day ago</div>
 
             <div className="text-center flex flex-col gap-6 justify-center items-center">
               <div className="badge bg-[#CBFADB] text-black">{friend.tags}</div>
