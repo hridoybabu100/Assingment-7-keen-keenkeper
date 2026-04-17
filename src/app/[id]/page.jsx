@@ -2,6 +2,7 @@ import HandleCall from "@/components/allToggleBtn/HandleCall";
 import HandleText from "@/components/allToggleBtn/HandleText";
 import HandleVedio from "@/components/allToggleBtn/HandleVedio";
 import Image from "next/image";
+import Link from "next/link";
 
 import { FiArchive } from "react-icons/fi";
 import {
@@ -35,10 +36,9 @@ const frinendDetails = async ({ params }) => {
   if (!friend) {
     return (
       <div className="my-12 max-w-[94%] lg:max-w-[80%] mx-auto">
-
-      <div className="bg-base-300 p-15 lg:p-30 rounded-2xl mt-6 text-black text-4xl font-bold justify-center flex items-center">
-        Not Found Data
-      </div>
+        <div className="bg-base-300 p-15 lg:p-30 rounded-2xl mt-6 text-black text-4xl font-bold justify-center flex items-center">
+          Not Data Found!
+        </div>
       </div>
     );
   }

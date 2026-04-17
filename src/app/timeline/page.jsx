@@ -22,7 +22,7 @@ const TimeLinepage = () => {
 
       {call.length === 0 ? (
         <div className="bg-base-300 p-15 lg:p-30 rounded-2xl mt-6 text-black text-4xl font-bold justify-center flex items-center">
-          Not Found Data
+          Not Data Found!
         </div>
       ) : (
         <div className="mt-6">
