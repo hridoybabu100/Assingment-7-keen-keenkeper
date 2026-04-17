@@ -4,7 +4,7 @@ import FriendCard from "../UI/FriendCard/FriendCard";
 
 
 const Friends = async () => {
-   const res = await fetch('https://assingment-7-ken-keeper.vercel.app//Data.json', {
+   const res = await fetch('https://assingment-7-ken-keeper.vercel.app/Data.json', {
     cache : "no-store"
    });
    const data = await res.json();

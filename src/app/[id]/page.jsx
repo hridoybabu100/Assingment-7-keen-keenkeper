@@ -2,7 +2,7 @@ import HandleCall from "@/components/allToggleBtn/HandleCall";
 import HandleText from "@/components/allToggleBtn/HandleText";
 import HandleVedio from "@/components/allToggleBtn/HandleVedio";
 import Image from "next/image";
-import Link from "next/link";
+
 
 import { FiArchive } from "react-icons/fi";
 import {
@@ -23,7 +23,7 @@ const frinendDetails = async ({ params }) => {
   // console.log(data);
 
   const res = await fetch(
-    "https://assingment-7-ken-keeper.vercel.app//Data.json",
+    "https://assingment-7-ken-keeper.vercel.app/Data.json",
     {
       cache: "no-store",
     },
