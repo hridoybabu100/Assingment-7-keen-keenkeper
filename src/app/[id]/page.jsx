@@ -32,7 +32,16 @@ const frinendDetails = async ({ params }) => {
 
   const friend = friends.find((friend) => friend.id === parseInt(id));
   // console.log(friend);
+  if (!friend) {
+    return (
+      <div className="my-12 max-w-[94%] lg:max-w-[80%] mx-auto">
 
+      <div className="bg-base-300 p-15 lg:p-30 rounded-2xl mt-6 text-black text-4xl font-bold justify-center flex items-center">
+        Not Found Data
+      </div>
+      </div>
+    );
+  }
   return (
     <div className="">
       <div className="bg-[#f8fafb] min-h-screen py-20">
@@ -100,8 +109,7 @@ const frinendDetails = async ({ params }) => {
                 </button>
 
                 <button className="btn shadow rounded-xl w-full text-red-500  bg-white normal-case font-bold border-gray-100 hover:text-white hover:bg-red-400 py-6">
-                  <MdOutlineDeleteForever size={25} className="" />{" "}
-                  Delete
+                  <MdOutlineDeleteForever size={25} className="" /> Delete
                 </button>
               </div>
             </div>
@@ -129,7 +137,7 @@ const frinendDetails = async ({ params }) => {
                 <div className="bg-white rounded-2xl shadow p-8 text-center">
                   <h2 className="text-3xl font-bold text-[#1a4d40]">
                     {/* {friend?.next_due_date} */}
-                    {friend.next_due_date}
+                    {friend?.next_due_date}
                   </h2>
                   <p className="text-gray-400 text-sm mt-3 font-medium">
                     Next Due
