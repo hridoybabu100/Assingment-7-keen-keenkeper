@@ -11,7 +11,7 @@ const Navbar = () => {
 //   console.log("This is a path :", path);
 
   return (
-    <div className="shadow-sm">
+    <div className="shadow-sm sticky top-0 z-10">
       <div className="navbar bg-base-100  max-w-[94%] lg:max-w-[85%] mx-auto">
         <div className="navbar-start">
           <span className="text-[#244D3F] text-4xl sm:hidden"><FaUserGraduate/></span>
