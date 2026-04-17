@@ -1,6 +1,4 @@
-**Here's a clean, professional, and smart README.md** for your **KeenKeeper** project:
-
----
+Here's a **modern, clean, and professional README.md** for your **KeenKeeper** project:
 
 ```markdown
 # KeenKeeper 👥
@@ -8,38 +6,85 @@
 **Your personal shelf of meaningful connections.**  
 Nurture the relationships that matter most — before they fade away.
 
----
-
-## 🌟 Project Overview
-
-KeenKeeper is a thoughtful relationship management web app that helps you stay connected with friends, family, colleagues, and mentors. It tracks how long it’s been since you last reached out and reminds you to keep those important relationships alive.
-
-Built with **Next.js 16**, **React 19**, **Tailwind CSS**, and **DaisyUI**.
+![KeenKeeper Hero](https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 
 ---
 
-## ✨ Features
+## ✨ Overview
 
-- **Beautiful Dashboard** — Overview of your connections
-- **Friend Profiles** — Detailed view with bio, tags, contact goal & last interaction
-- **Quick Check-ins** — One-click Call, Text, or Video call logging
-- **Smart Timeline** — Chronological history of your interactions
-- **Visual Stats** — Interactive pie chart showing your communication patterns
-- **Responsive Design** — Works perfectly on mobile, tablet & desktop
-- **Toast Notifications** — Smooth user feedback
-- **Modern UI** — Clean, minimal, and calming interface
+KeenKeeper is a beautiful and thoughtful **relationship management web app** that helps you stay connected with friends, family, colleagues, and mentors. It tracks how long it’s been since your last interaction and gently reminds you to nurture your important relationships.
+
+Built with the latest technologies for a smooth, modern experience.
+
+---
+
+## 🚀 Live Demo
+
+[View Live Demo](https://assingment-7-ken-keeper.vercel.app)  
+*(Deployed on Vercel)*
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Framework**: Next.js 16 (App Router)
-- **React**: 19.2.4
-- **Styling**: Tailwind CSS 4 + DaisyUI 5
-- **Charts**: Recharts
-- **Notifications**: React Toastify
-- **Icons**: React Icons
-- **State Management**: React Context API
+| Technology          | Version    |
+|---------------------|------------|
+| **Next.js**         | 16.2.3     |
+| **React**           | 19.2.4     |
+| **Tailwind CSS**    | 4          |
+| **DaisyUI**         | 5.5.19     |
+| **Recharts**        | 3.8.1      |
+| **React Toastify**  | 11.0.5     |
+| **React Icons**     | 5.6.0      |
+
+---
+
+## ✨ Features
+
+- **Modern Dashboard** — Clean overview with key relationship stats
+- **Beautiful Friend Profiles** — Detailed cards with bio, tags, contact goals & last interaction
+- **Quick Check-ins** — One-click logging for **Call**, **Text**, or **Video** interactions
+- **Smart Timeline** — Chronological history of all your logged interactions
+- **Visual Analytics** — Interactive pie chart showing your communication patterns
+- **Fully Responsive** — Perfect experience on mobile, tablet, and desktop
+- **Toast Notifications** — Smooth feedback for every action
+- **Calming & Minimal UI** — Designed to feel peaceful and intuitive
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+├── app/                    # Next.js App Router
+│   ├── [id]/               # Dynamic friend detail page
+│   ├── timeline/           # Interaction history
+│   ├── stats/              # Communication analytics
+│   └── layout.js
+├── components/             # Reusable UI components
+├── Context/                # React Context for global state
+├── Hooks/                  # Custom hooks
+├── image/                  # Local images
+└── ...
+```
+
+---
+
+## 🧪 Sample Data
+
+The app ships with **10 realistic sample contacts** including:
+- College friends
+- Work colleagues
+- Family members
+- Gym buddies
+- Career mentors
+
+Each profile includes:
+- High-quality profile picture (from Pexels)
+- Contact frequency goal
+- Days since last contact
+- Status (Active / Due / Overdue)
+- Personalized tags and bio
 
 ---
 
@@ -64,79 +109,45 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the app.
+Open [http://localhost:3000](http://localhost:3000) to explore the app.
 
 ---
 
-## 📂 Project Structure
+## 📸 Screenshots
 
-```
-src/
-├── app/                  # Next.js App Router
-│   ├── [id]/             # Dynamic friend detail page
-│   ├── timeline/         # Interaction history
-│   ├── stats/            # Communication analytics
-│   └── layout.js
-├── components/           # Reusable UI components
-├── Context/              # React Context for global state
-├── Hooks/                # Custom hooks
-├── image/                # Local images
-└── ...
-```
+*(You can add actual screenshots here later)*
+
+- Dashboard with stats
+- Friend cards grid
+- Detailed profile page with quick actions
+- Timeline view
+- Stats pie chart
 
 ---
 
-## 🎯 How It Works
+## 🎯 Future Enhancements
 
-1. **Home** — See overview stats and all your friends
-2. **Friend Card** — Click any friend to view details
-3. **Quick Actions** — Log a call, text, or video interaction instantly
-4. **Timeline** — View all your logged interactions chronologically
-5. **Stats** — Beautiful pie chart visualizing your communication habits
-
----
-
-## 📊 Sample Data
-
-The app comes with **10 sample friends** including:
-- College friends
-- Work colleagues
-- Family members
-- Gym buddies
-- Career mentors
-
-Each friend has:
-- Profile picture (from Pexels)
-- Contact frequency goal
-- Days since last contact
-- Status (Active / Due / Overdue)
-- Tags and personal bio
-
----
-
-## 🧩 Future Enhancements (Ideas)
-
-- Add new friends manually
-- Real backend with database (Supabase / Firebase)
-- Email/SMS reminders
+- Add / Edit friends manually
+- Backend integration (Supabase / Firebase)
+- Email & SMS reminders
 - Relationship strength scoring
-- Calendar integration
-- Dark mode
+- Calendar sync
+- Dark mode support
 - Export interaction history
 
 ---
 
 ## 📄 License
 
-This project is open-source and available under the **MIT License**.
+This project is open-source under the **MIT License**.
 
 ---
 
 ## 🙌 Acknowledgments
 
-- Design inspiration from modern relationship & habit apps
 - Images from [Pexels](https://pexels.com)
-- Built as an assignment to demonstrate clean Next.js architecture
+- Design inspiration from modern habit & relationship apps
+- Built as a learning project to showcase clean **Next.js 16 + React 19** architecture
 
 ---
 
@@ -144,4 +155,5 @@ This project is open-source and available under the **MIT License**.
 
 ---
 
-Would you like a **shorter version** or a **more developer-focused** README (with deployment instructions, environment variables, etc.)? I can adjust it based on your preference!
+Would you like a **shorter version** or a version optimized for **GitHub Profile / Portfolio**?
+Just let me know!
